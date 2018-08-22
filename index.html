@@ -6,6 +6,14 @@
 			* {
 				font-family: 'Roboto', sans-serif;
 			}
+			
+			h3 {
+				font-size: 40px;
+			}
+			
+			h1 {
+				font-size: 60px;
+			}
 		</style>
 	</head>
 	<body>
@@ -14,7 +22,7 @@
 			<h1 id="yesno"></h1>
 		</div>
 		<script>
-			function() {
+			(function() {
 				var text = "no";
 				var yesno = document.getElementById( "yesno" );
 				var d = new Date();
@@ -23,7 +31,7 @@
 				}
 				
 				yesno.innerText = text;
-			}();
+			})();
 		</script>
 	</body>
 </html>
