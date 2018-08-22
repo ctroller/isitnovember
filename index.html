@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Is it november?</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style type="text/css">
+			* {
+				font-family: 'Roboto', sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="width: 100%; text-align: center; padding-top: 50px;">
+			<h3>Is it november?</h3>
+			<h1 id="yesno"></h1>
+		</div>
+		<script>
+			function() {
+				var text = "no";
+				var yesno = document.getElementById( "yesno" );
+				var d = new Date();
+				if( d.getMonth() + 1 == 11 ) {
+					text = "yes";
+				}
+				
+				yesno.innerText = text;
+			}();
+		</script>
+	</body>
+</html>
