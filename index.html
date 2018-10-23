@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Is it november?</title>
+		<title>Is it November?</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<style type="text/css">
 			* {
@@ -18,16 +18,16 @@
 	</head>
 	<body>
 		<div style="width: 100%; text-align: center; padding-top: 50px;">
-			<h3>is it november?</h3>
+			<h3>Is it November?</h3>
 			<h1 id="yesno"></h1>
 		</div>
 		<script>
 			(function() {
-				var text = "no";
+				var text = "No";
 				var yesno = document.getElementById( "yesno" );
 				var d = new Date();
 				if( d.getMonth() + 1 == 11 ) {
-					text = "yes";
+					text = "Yes";
 				}
 				
 				yesno.innerText = text;
